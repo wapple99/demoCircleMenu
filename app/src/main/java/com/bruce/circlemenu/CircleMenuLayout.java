@@ -124,6 +124,7 @@ public class CircleMenuLayout extends ViewGroup {
 
         // 获得半径
         mRadius = Math.max(getMeasuredWidth(), getMeasuredHeight());
+        //mRadius = Math.min(getMeasuredWidth(),getMeasuredHeight());
 
         // menu item数量
         final int count = getChildCount();

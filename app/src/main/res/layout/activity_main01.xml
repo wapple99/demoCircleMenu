@@ -6,29 +6,60 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-    <com.bruce.circlemenu.CircleMenuLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/id_menulayout"
-        android:padding="100dp"
-        android:background="@drawable/circle_bg3"
-        >
-        <RelativeLayout
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/turnplate_bg_left"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@id/id_circle_menu_item_center">
-            <ImageView
-                android:layout_width="104.0dip"
-                android:layout_height="104.0dip"
-                android:layout_centerInParent="true"
-                android:background="@drawable/turnplate_center_unlogin"/>
-            <ImageView
-                android:layout_width="116.0dip"
-                android:layout_height="116.0dip"
-                android:layout_centerInParent="true"
-                android:background="@drawable/turnplate_mask_unlogin_normal"/>
+            android:gravity="center"
+            android:text="手机银行"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
 
-        </RelativeLayout>
-    </com.bruce.circlemenu.CircleMenuLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_marginTop="5dp"
+            android:text="贴心的银行服务，带给您更安全便捷的智能金融体验。"
+            android:textColor="#ffffff"
+            android:textSize="13.5dip" />
+    </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.bruce.circlemenu.CircleMenuLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/id_menulayout"
+            android:background="@drawable/turnplate_bg_right"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/id_circle_menu_item_center">
+                <ImageView
+                    android:layout_width="104.0dip"
+                    android:layout_height="104.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/turnplate_center_unlogin"/>
+                <ImageView
+                    android:layout_width="116.0dip"
+                    android:layout_height="116.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/turnplate_mask_unlogin_normal"/>
+
+            </RelativeLayout>
+        </com.bruce.circlemenu.CircleMenuLayout>
+    </FrameLayout>
 </LinearLayout>

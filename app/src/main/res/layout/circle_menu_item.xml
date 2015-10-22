@@ -18,7 +18,8 @@
         android:visibility="gone"
         android:textColor="@android:color/white"
         android:text="保险"
-        android:textSize="14.0dip"/>
+        android:textSize="10.0dip"/>
+
 
 
 </LinearLayout>
